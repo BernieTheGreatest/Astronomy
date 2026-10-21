@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore NASA’s Astronomy Picture of the Day. A new perspective on our universe, every day.">
+  <title>Daily Cosmos · NASA Astronomy Picture of the Day</title>
+  <link rel="stylesheet" href="/styles.css"><script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="/">✧ DAILY COSMOS</a><a href="https://apod.nasa.gov/apod/astropix.html" target="_blank" rel="noopener noreferrer">NASA APOD ↗</a></header>
+  <main>
+    <section class="intro"><p class="eyebrow">A SMALL WINDOW INTO AN INFINITE UNIVERSE</p><h1>The universe.<br>One day at a time.</h1><p>Discover NASA’s Astronomy Picture of the Day — and the story behind it.</p></section>
+    <form id="date-form"><label for="date">Explore a date</label><div class="controls"><input id="date" name="date" type="date" min="1995-06-16" required><button type="submit">Explore ↗</button><button type="button" id="today" class="secondary">Today</button></div></form>
+    <p id="status" role="status" aria-live="polite">Connecting to NASA…</p>
+    <article id="entry" hidden><div id="media"></div><div class="story"><p id="entry-date" class="eyebrow"></p><h2 id="title"></h2><p id="explanation"></p><p id="credit" class="muted"></p><a id="original" target="_blank" rel="noopener noreferrer">Open original on NASA ↗</a></div></article>
+    <details><summary>NASA API access</summary><p>This site uses NASA’s shared demo key, which has a limited request allowance. Optionally enter your own key from <a href="https://api.nasa.gov/" target="_blank" rel="noopener noreferrer">api.nasa.gov</a>. It stays in memory for this tab and is sent only to NASA. Browser API keys are visible to the browser; do not use a secret credential.</p><form id="key-form"><label for="api-key">NASA API key</label><div class="controls"><input id="api-key" type="password" autocomplete="off" placeholder="DEMO_KEY"><button type="submit">Apply & reload</button></div></form></details>
+  </main><footer>Powered by NASA APOD · Stay curious.</footer>
+</body>
+</html>
